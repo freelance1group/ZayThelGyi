@@ -1,5 +1,6 @@
 package com.example.zaythelgyi.mvp.presenter
 
+import com.example.zaythelgyi.activity.MainActivity
 import com.example.zaythelgyi.mvp.view.BaseView
 
 abstract class AbstractBasePresenter<T : BaseView> : BasePresenter<T> {

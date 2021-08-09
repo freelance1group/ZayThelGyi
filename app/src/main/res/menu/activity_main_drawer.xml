@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <item
+        android:id="@+id/nav_selling_lists"
+        android:icon="@drawable/ic_launcher_foreground"
+        android:title="Sellinig Lists" />
+    <item
+        android:id="@+id/nav_category"
+        android:icon="@drawable/ic_launcher_foreground"
+        android:title="Catogories" />
+    <item
+        android:id="@+id/nav_product"
+        android:icon="@drawable/ic_launcher_foreground"
+        android:title="Products" />
+</menu>

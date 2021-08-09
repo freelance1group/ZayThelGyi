@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorSplashScreenBg"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gl_horizontal_65"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.65"/>
+
+    <ImageView
+        android:id="@+id/iv_category_logo"
+        android:layout_width="@dimen/logo_width"
+        android:layout_height="@dimen/logo_height"
+        android:src="@drawable/logo"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="@dimen/label_margin_top_bottom"/>
+
+    <EditText
+        android:id="@+id/et_category_name"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/et_height"
+        android:background="@drawable/et_background"
+        android:hint="@string/the_name_of_category"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/iv_category_logo"
+        android:layout_marginStart="@dimen/et_margin_start_end"
+        android:layout_marginEnd="@dimen/et_margin_start_end"
+        android:paddingStart="@dimen/et_padding_start_end"
+        android:paddingEnd="@dimen/et_padding_start_end"/>
+
+    <EditText
+        android:id="@+id/et_category_price"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/et_height"
+        android:background="@drawable/et_background"
+        android:hint="@string/category_price"
+        app:layout_constraintStart_toStartOf="@id/et_category_name"
+        app:layout_constraintEnd_toStartOf="@id/gl_horizontal_65"
+        app:layout_constraintTop_toBottomOf="@id/et_category_name"
+        android:layout_marginTop="@dimen/value_margin_top_bottom"
+        android:paddingStart="@dimen/et_padding_start_end"
+        android:paddingEnd="@dimen/et_padding_start_end"/>
+
+    <TextView
+        android:id="@+id/tv_unit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/kyat"
+        android:textColor="@color/text_black"
+        app:layout_constraintStart_toEndOf="@id/gl_horizontal_65"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/et_category_price"
+        app:layout_constraintBottom_toBottomOf="@+id/et_category_price"/>
+
+    <CheckBox
+        android:id="@+id/cb_quantity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/text_black"
+        app:layout_constraintTop_toBottomOf="@id/et_category_price"
+        app:layout_constraintStart_toStartOf="@id/et_category_name"
+        android:layout_marginTop="@dimen/checkBox__margin_top_bottom"
+        android:padding="@dimen/et_padding_start_end"
+        android:layout_marginLeft="@dimen/et_margin_start_end"/>
+
+    <TextView
+        android:id="@+id/tv_no_quantity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/no_quantity"
+        app:layout_constraintStart_toEndOf="@id/cb_quantity"
+        app:layout_constraintTop_toTopOf="@id/cb_quantity"
+        app:layout_constraintBottom_toBottomOf="@id/cb_quantity"/>
+
+    <EditText
+        android:id="@+id/et_category_quantity"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/et_height"
+        android:background="@drawable/et_background"
+        android:hint="@string/category_quantity"
+        android:textAlignment="textEnd"
+        app:layout_constraintStart_toStartOf="@id/et_category_name"
+        app:layout_constraintEnd_toStartOf="@id/gl_horizontal_65"
+        app:layout_constraintTop_toBottomOf="@id/cb_quantity"
+        android:layout_marginTop="@dimen/value_margin_top_bottom"
+        android:paddingStart="@dimen/et_padding_start_end"
+        android:paddingEnd="@dimen/et_padding_start_end"/>
+
+    <EditText
+        android:id="@+id/et_unit"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/et_height"
+        android:background="@drawable/et_background"
+        android:hint="@string/category_unit"
+        android:textAlignment="center"
+        app:layout_constraintStart_toEndOf="@id/et_category_quantity"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/et_category_quantity"
+        android:layout_marginLeft="@dimen/et_margin_start_end"/>
+
+    <Button
+        android:id="@+id/btn_continue_category"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/btn_height"
+        android:text="@string/continue_category"
+        android:background="@color/btn_background"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

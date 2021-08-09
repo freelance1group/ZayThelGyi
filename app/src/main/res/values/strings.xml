@@ -12,4 +12,20 @@
     <string name="address">address</string>
     <string name="need_to_add">"jgdlgj dkfjdkf dkj dj dkjs; s;lskdd skdsk jf fjdkjf mkjk kfje  kjfke fjkefj "</string>
     <string name="to_start_add">Start To Add</string>
+    <string name="to_choose_category">To Choose Category</string>
+    <string name="start_category_name">အ</string>
+    <string name="category_name">စား‌ေသာက္ကုန္</string>
+    <string name="category_count">0</string>
+    <string name="category_price">Price</string>
+    <string name="kyat">က်ပ္</string>
+    <string name="no_quantity">No Quantity</string>
+    <string name="category_quantity">အ‌ေရအတြက္</string>
+    <string name="category_unit">ခု</string>
+    <string name="continue_category">‌ေရှ့ဆက်ရန်....</string>
+    <string name="the_name_of_category">The name of Category</string>
+    <string name="need_to_sell">Can Sell</string>
+    <string name="good_sell">Good Sell</string>
+    <string name="navigation_drawer_open">Open navigation drawe</string>
+    <string name="navigation_drawer_close">Close navigation drawe</string>
+    <string name="to_start_sell">To Start Selling</string>
 </resources>

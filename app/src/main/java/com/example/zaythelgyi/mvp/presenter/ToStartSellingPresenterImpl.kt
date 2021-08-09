@@ -1,8 +1,8 @@
 package com.example.zaythelgyi.mvp.presenter
 
-import com.example.zaythelgyi.mvp.view.ToStartAddingView
+import com.example.zaythelgyi.mvp.view.ToStartSellingView
 
-class ToStartAddingPresenterImpl : AbstractBasePresenter<ToStartAddingView>() , ToStartAddingPresenter {
+class ToStartSellingPresenterImpl : AbstractBasePresenter<ToStartSellingView>(), ToStartAddingPresenter {
     override fun onStart() {
         TODO("Not yet implemented")
     }

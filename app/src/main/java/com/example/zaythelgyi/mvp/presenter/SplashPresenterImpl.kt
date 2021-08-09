@@ -9,7 +9,7 @@ class SplashPresenterImpl : AbstractBasePresenter<SplashView>() , SplashPresente
 
     override fun onCreate() {
         mView?.init()
-        mView?.listener()
+        //mView?.listener()
     }
 
     override fun onCreateView() {

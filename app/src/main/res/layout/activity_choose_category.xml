@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorSplashScreenBg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tv_to_choose_category"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:text="@string/to_choose_category"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/title_text_size"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="@dimen/title_margin_top_bottom"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cl_for_rv"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@id/tv_to_choose_category"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginTop="@dimen/title_margin_top_bottom">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_to_choose_category"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorWhite"
+            app:layout_constraintTop_toTopOf="@id/cl_for_rv"
+            android:layout_marginLeft="@dimen/value_margin_top_bottom"
+            android:layout_marginRight="@dimen/value_margin_top_bottom">
+
+        </androidx.recyclerview.widget.RecyclerView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

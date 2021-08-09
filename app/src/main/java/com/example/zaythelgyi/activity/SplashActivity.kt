@@ -1,6 +1,7 @@
 package com.example.zaythelgyi.activity
 
 import android.os.Bundle
+import android.os.Handler
 import com.example.zaythelgyi.R
 import com.example.zaythelgyi.mvp.presenter.SplashPresenterImpl
 import com.example.zaythelgyi.mvp.view.SplashView
@@ -11,6 +12,7 @@ class SplashActivity : BaseActivity() , SplashView {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        this.supportActionBar?.hide()
         setContentView(R.layout.activity_splash)
         setUpPresenter()
         mPresenter.onCreate()
@@ -23,6 +25,11 @@ class SplashActivity : BaseActivity() , SplashView {
     }
 
     override fun init() {
+        val handler = Handler()
+        handler.postDelayed({
+            startActivity(WelcomeActivity.newIntent(this))
+        }, 1000
+        )
 
     }
 

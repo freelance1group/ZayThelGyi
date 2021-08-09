@@ -7,4 +7,6 @@
     <color name="colorSplashScreenBg">#FF9800</color>
     <color name="colorWhite">#ffffff</color>
     <color name="colorBlack">#000000</color>
+    <color name="colorCardViewBg">#BCBCBC</color>
+    <color name="colorRed">#F24055</color>
 </resources>
