@@ -37,7 +37,7 @@ class ToStartSellingActivity : BaseActivity(), ToStartSellingView {
 
     override fun listener() {
         btn_to_start_sell.setOnClickListener {
-            startActivity(TestNavActivity.newIntent(this))
+            startActivity(MainActivity.newIntent(this))
         }
     }
 }

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/cl_category_main"
+    app:cardCornerRadius="@dimen/cardview_radius"
+    app:cardElevation="@dimen/cardview_elevation"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="@dimen/cv_padding_start_end">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv_category"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="@dimen/cardview_radius"
+        app:cardElevation="@dimen/cardview_elevation"
+        android:background="@drawable/et_background"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/cl_product"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="@dimen/adapter_image_padding">
+
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/civ_product"
+                android:layout_width="@dimen/category_circle_image_width_height"
+                android:layout_height="@dimen/category_circle_image_width_height"
+                android:src="@color/btn_background"
+                app:layout_constraintTop_toTopOf="@id/cl_product"
+                app:layout_constraintStart_toStartOf="@id/cl_product"/>
+            <TextView
+                android:id="@+id/tv_start_product_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/start_category_name"
+                android:textAlignment="center"
+                android:gravity="center_horizontal"
+                android:textColor="@color/colorWhite"
+                app:layout_constraintTop_toTopOf="@id/civ_product"
+                app:layout_constraintBottom_toBottomOf="@id/civ_product"
+                app:layout_constraintStart_toStartOf="@id/civ_product"
+                app:layout_constraintEnd_toEndOf="@id/civ_product"/>
+
+            <TextView
+                android:id="@+id/tv_product_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/category_name"
+                app:layout_constraintTop_toTopOf="@id/civ_product"
+                app:layout_constraintBottom_toBottomOf="@id/civ_product"
+                app:layout_constraintStart_toEndOf="@id/civ_product"
+                android:padding="@dimen/adapter_image_padding"
+                />
+
+            <ImageView
+                android:id="@+id/iv_dot"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_baseline_more_vert_24"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@id/civ_product"
+                app:layout_constraintBottom_toBottomOf="@id/civ_product"/>
+
+            <TextView
+                android:id="@+id/tv_line"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/line"
+                app:layout_constraintTop_toBottomOf="@id/civ_product"/>
+
+            <TextView
+                android:id="@+id/tv_quantity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="100"
+                android:textColor="@color/text_black"
+                android:textSize="@dimen/value_text_size"
+                app:layout_constraintTop_toBottomOf="@id/tv_line"
+                app:layout_constraintStart_toStartOf="@id/tv_start_product_name"
+                app:layout_constraintEnd_toEndOf="@id/tv_start_product_name"/>
+
+            <TextView
+                android:id="@+id/tv_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="55Ks"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/value_text_size"
+                app:layout_constraintTop_toBottomOf="@id/tv_line"
+                app:layout_constraintEnd_toEndOf="parent"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

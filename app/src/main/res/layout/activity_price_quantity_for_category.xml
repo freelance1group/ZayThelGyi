@@ -100,9 +100,9 @@
         android:layout_height="@dimen/et_height"
         android:background="@drawable/et_background"
         android:hint="@string/category_unit"
-        android:textAlignment="center"
+        android:gravity="center_horizontal"
         app:layout_constraintStart_toEndOf="@id/et_category_quantity"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/et_category_name"
         app:layout_constraintTop_toTopOf="@id/et_category_quantity"
         android:layout_marginLeft="@dimen/et_margin_start_end"/>
 
@@ -111,6 +111,7 @@
         android:layout_width="match_parent"
         android:layout_height="@dimen/btn_height"
         android:text="@string/continue_category"
+        android:textColor="@color/colorWhite"
         android:background="@color/btn_background"
         app:layout_constraintBottom_toBottomOf="parent"/>
 

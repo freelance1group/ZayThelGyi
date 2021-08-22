@@ -38,7 +38,34 @@ class AboutShopActivity : BaseActivity(), AboutShopView{
 
     override fun listener() {
         btn_continue.setOnClickListener{
-            startActivity(ToStartAddingActivity.newIntent(this))
+            if(validationEdittext()){
+                startActivity(EnterPasswordActivity.newIntent(this))
+            }
+            else {
+                startActivity(EnterPasswordActivity.newIntent(this))
+            }
         }
+    }
+
+    private fun validationEdittext(): Boolean {
+
+        if(et_user_name.text.isEmpty()) {
+            et_user_name.error = getString(R.string.error)
+            return false
+        }
+        else if(et_shop_name.text.isEmpty()) {
+            et_shop_name.error = getString(R.string.error)
+            return false
+        }
+        else if(et_phone.text.isEmpty()) {
+            et_phone.error = getString(R.string.error)
+            return false
+        }
+        else if(et_address.text.isEmpty()) {
+            et_address.error = getString(R.string.error)
+            return false
+        }
+
+        return true
     }
 }

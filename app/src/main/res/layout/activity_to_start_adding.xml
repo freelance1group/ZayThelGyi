@@ -29,7 +29,7 @@
     <Button
         android:id="@+id/btn_to_start_add"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="@dimen/btn_height"
         android:text="@string/to_start_add"
         android:textColor="@color/colorWhite"
         android:background="@color/btn_background"

@@ -9,15 +9,18 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".activity.TestNavActivity"/>
-        <activity android:name=".activity.MainActivity"/>
-        <activity android:name=".activity.ToStartSellingActivity"/>
-        <activity android:name=".activity.PriceQauntityForCategoryActivity"/>
-        <activity android:name=".activity.ChooseCategoryActivity"/>
-        <activity android:name=".activity.ToStartAddingActivity"/>
-        <activity android:name=".activity.AboutShopActivity"/>
-        <activity android:name=".activity.WelcomeActivity"/>
-        <activity android:name=".activity.SplashActivity">
+        <activity android:name=".activity.StartSellingActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".activity.MainActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".activity.ToStartSellingActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".activity.PriceQauntityForCategoryActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".activity.ChooseCategoryActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".activity.ToStartAddingActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".activity.ConfirmPasswordActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".activity.EnterPasswordActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".activity.AboutShopActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".activity.WelcomeActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".activity.SplashActivity"
+            android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

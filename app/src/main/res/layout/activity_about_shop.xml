@@ -27,7 +27,7 @@
             android:id="@+id/et_user_name"
             android:layout_width="match_parent"
             android:layout_height="@dimen/et_height"
-            android:background="@color/colorWhite"
+            android:background="@drawable/et_background"
             android:hint="@string/user_name"
             app:layout_constraintStart_toStartOf="@id/cl_about_shop"
             app:layout_constraintEnd_toEndOf="@id/cl_about_shop"
@@ -40,7 +40,7 @@
             android:id="@+id/et_shop_name"
             android:layout_width="match_parent"
             android:layout_height="@dimen/et_height"
-            android:background="@color/colorWhite"
+            android:background="@drawable/et_background"
             android:hint="@string/shop_name"
             app:layout_constraintStart_toStartOf="@id/cl_about_shop"
             app:layout_constraintEnd_toEndOf="@id/cl_about_shop"
@@ -54,7 +54,7 @@
             android:id="@+id/et_phone"
             android:layout_width="match_parent"
             android:layout_height="@dimen/et_height"
-            android:background="@color/colorWhite"
+            android:background="@drawable/et_background"
             android:hint="@string/phone"
             app:layout_constraintStart_toStartOf="@id/cl_about_shop"
             app:layout_constraintEnd_toEndOf="@id/cl_about_shop"
@@ -67,8 +67,8 @@
         <EditText
             android:id="@+id/et_address"
             android:layout_width="match_parent"
-            android:layout_height="@dimen/et_height"
-            android:background="@color/colorWhite"
+            android:layout_height="@dimen/et_address_height"
+            android:background="@drawable/et_background"
             android:hint="@string/address"
             app:layout_constraintStart_toStartOf="@id/cl_about_shop"
             app:layout_constraintEnd_toEndOf="@id/cl_about_shop"
@@ -84,12 +84,12 @@
     <Button
         android:id="@+id/btn_continue"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="@dimen/btn_height"
         android:text="@string/tocontinue"
+        android:background="@color/btn_background"
         android:textColor="@color/colorWhite"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:background="@color/btn_background"
         app:layout_constraintBottom_toBottomOf="parent"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

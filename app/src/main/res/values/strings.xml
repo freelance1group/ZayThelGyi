@@ -28,4 +28,12 @@
     <string name="navigation_drawer_open">Open navigation drawe</string>
     <string name="navigation_drawer_close">Close navigation drawe</string>
     <string name="to_start_sell">To Start Selling</string>
+    <string name="in_order_to_category">Order to Category:</string>
+    <string name="all">All</string>
+    <string name="amount">Amount</string>
+    <string name="total">Total</string>
+    <string name="record_for_sell">Record For Sell</string>
+    <string name="error">Require!!</string>
+    <string name="to_create_category">To Create new Category</string>
+    <string name="save">Save</string>
 </resources>

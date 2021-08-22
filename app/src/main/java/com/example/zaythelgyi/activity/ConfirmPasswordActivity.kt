@@ -1,13 +1,28 @@
 package com.example.zaythelgyi.activity
 
+import android.content.Context
+import android.content.Intent
 import android.os.Bundle
+import android.widget.Toast
 import com.example.zaythelgyi.R
 import com.example.zaythelgyi.mvp.presenter.ConfirmPasswordPresenterImpl
 import com.example.zaythelgyi.mvp.view.ConfirmPasswordView
+import com.hanks.passcodeview.PasscodeView
 
 class ConfirmPasswordActivity : BaseActivity() , ConfirmPasswordView{
 
     private lateinit var mPresenter : ConfirmPasswordPresenterImpl
+    private lateinit var passcodeVew : PasscodeView
+    private lateinit var from : String
+
+    companion object {
+        private const val FROM = "from"
+        fun newIntent(context: Context, password: String): Intent {
+            val intent = Intent(context, ConfirmPasswordActivity::class.java)
+            intent.putExtra(FROM, password)
+            return intent
+        }
+    }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -23,10 +38,15 @@ class ConfirmPasswordActivity : BaseActivity() , ConfirmPasswordView{
     }
 
     override fun init() {
-        TODO("Not yet implemented")
+        from = intent.getStringExtra(FROM).toString()
     }
 
     override fun listener() {
-        TODO("Not yet implemented")
+        passcodeVew = findViewById(R.id.passcodeview_confirm)
+        val confirmPassword = passcodeVew.localPasscode
+
+        if(confirmPassword == from){
+            startActivity(ToStartAddingActivity.newIntent(this))
+        }
     }
 }

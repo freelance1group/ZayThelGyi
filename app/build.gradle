@@ -1,6 +1,7 @@
 apply plugin: 'com.android.application'
 apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-android-extensions'
+apply plugin: 'kotlin-kapt'
 
 android {
     compileSdkVersion 30
@@ -54,5 +55,14 @@ dependencies {
     implementation 'androidx.navigation:navigation-fragment-ktx:2.1.0'
     implementation 'androidx.navigation:navigation-ui-ktx:2.1.0'
 
-    
+    // DialogPlus
+    implementation 'com.orhanobut:dialogplus:1.11@aar'
+
+    implementation "androidx.lifecycle:lifecycle-extensions:2.0.0-alpha1"
+    kapt "androidx.lifecycle:lifecycle-compiler:2.0.0-alpha1"
+    implementation "androidx.room:room-runtime:2.0.0-alpha1"
+    kapt "androidx.room:room-compiler:2.0.0-alpha1"
+
+
+
 }
